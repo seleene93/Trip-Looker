@@ -1,0 +1,38 @@
+select {
+  width: 20rem;
+  padding: 0.5rem;
+  background: rgba(240, 248, 255, 0.253);
+  border: 1px solid #000000;
+  border-radius: 8px;
+  font-size: 10px;
+}
+
+select:focus {
+  outline: none;
+}
+
+#filtros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+#lupa {
+  width: 2rem;
+  height: 2rem;
+}
+
+input#lugar {
+  font-size: 10px;
+}
+
+input#lugar:focus {
+  outline: none;
+}
+
+@media (max-width: 1040px) {
+  #filtros {
+    flex-direction: column;
+  }
+}
