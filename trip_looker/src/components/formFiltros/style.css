@@ -31,6 +31,10 @@ input#lugar:focus {
   outline: none;
 }
 
+p.error {
+  margin-top: 1rem !important;
+}
+
 @media (max-width: 1040px) {
   #filtros {
     flex-direction: column;

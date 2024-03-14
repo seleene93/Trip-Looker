@@ -1,7 +1,7 @@
 import "./style.css";
 import { Post } from "../post";
 
-export const PostList = ({ posts, setPosts }) => {
+export const PostList = ({ posts, setPosts, error }) => {
   return posts.length ? (
     <ul className="post-list">
       {posts.map((post) => {
@@ -11,6 +11,6 @@ export const PostList = ({ posts, setPosts }) => {
       })}
     </ul>
   ) : (
-    <p>No hay experiencias</p>
+    <ErrorMessage message={error} />
   );
 };
